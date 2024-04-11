@@ -1,0 +1,65 @@
+{
+  "name": "sirvjs-vue",
+  "version": "1.0.0",
+  "description": "Sirv Media Viewer for Vue.js",
+  "author": "sergey <sergeypo@protonmail.com>",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name index src/plugins/SirvMediaViewer/index.ts && tsc --emitDeclarationOnly",
+    "build:demo": "vue-cli-service build",
+    "test": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "prepare": "npm run build"
+  },
+  "main": "dist/index.umd.js",
+  "types": "dist/src/plugins/SirvMediaViewer/index.d.ts",
+  "keywords": [
+    "front-end",
+    "web",
+    "vue",
+    "vuejs",
+    "vue-js",
+    "sirv",
+    "viewer",
+    "sirv-media-viewer",
+    "vue-js-sirv-viewer",
+    "vue-viewer"
+  ],
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "load-script2": "^2.0.6",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "@vue/vue3-jest": "^27.0.0-alpha.1",
+    "babel-jest": "^27.0.6",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "jest": "^27.0.5",
+    "ts-jest": "^27.0.4",
+    "typescript": "~4.5.5"
+  },
+  "bugs": {
+    "url": "https://github.com/sirv/sirvjs-vue/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sirv/sirvjs-vue.git"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
