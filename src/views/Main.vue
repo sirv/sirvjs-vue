@@ -1,5 +1,5 @@
 <template>
-    <h2>Sirv Media Viewer</h2>
+    <h2>Vue components for Sirv.js</h2>
 
     
     <p>Iinstall</p>
