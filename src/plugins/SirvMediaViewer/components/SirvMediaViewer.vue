@@ -37,20 +37,6 @@ import { ViewerOptions } from '../types/SMVOptions';
 import SMV from '../types/SMV';
 import SMVSlide from '../types/SMVSlide';
 
-// interface Slide {
-//     src?: string | undefined
-//     type?: string
-//     dataOptions?: object
-//     id?: string | undefined
-//     dataPinned?: string
-//     dataThumbnailImage?: string
-//     dataThumbnailHtml?: string
-//     dataDisabled?: string | null
-//     dataSwipeDisabled?: string | null
-//     dataHiddenSelector?: string | null
-//     staticImage?: string | boolean | null
-// }
-
 declare global {
     interface Window {
         Sirv: SMV
@@ -127,17 +113,18 @@ export default defineComponent({
     setup() {},
 
     computed: {
-        // parsedComponents (): Array<SMVSlide> {
         parsedComponents (): any[] {
             if (this.dataSrc) {
                 return [];
             } else {
-                let c = this.slides;
-
-                if (!Array.isArray(c)) {
-                    c = [c];
+                let c: Array<SMVSlide> = []
+                if (Array.isArray(this.slides)) {
+                    c = this.slides as Array<SMVSlide>;
+                } else {
+                    c = [this.slides]
                 }
-                c = c.map((v: any) => {
+
+                c = c.map((v: SMVSlide) => {
                     if (typeof v === 'string') {
                         v = { src: v };
                     }
@@ -172,13 +159,10 @@ export default defineComponent({
 
                     v.staticImage = v.staticImage === true ? 'static' : null;
 
-                    // return v as SMVSlide;
                     return v;
                 });
 
-                // return c as Array<SMVSlide>;
                 return c;
-                //return c as SMVSlide[];
             }
         },
 
