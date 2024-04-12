@@ -18,7 +18,7 @@ npm install --save sirvjs-vue
         </div>
     </div>
 
-    <div style="text-align:left;">or you can add script by npm module
+    <div style="text-align:left;">or you can add script as a module
         <div class="wrapper">
             <pre class="prettyprint lang-javascript">
 import { loadSMVScript } from 'sirvjs-vue';
@@ -28,14 +28,6 @@ loadSMVScript().then((sirv) => {
 });
             </pre>
         </div>
-        <!-- <div>promise = loadSMVScript([attrs], [parentNode])</div>
-        <div>Append a &lt;script&gt; node with 'https://scripts.sirv.com/sirvjs/v3/sirv.js' URL to the &lt;head&gt; element in the DOM.</div>
-        <div>attrs (optional)</div>
-        <div>More about it you can find <a href="https://www.npmjs.com/package/load-script2#attrs-optional">here</a></div>
-        <div>parentNode (optional)</div>
-        <div>More about it you can find <a href="https://www.npmjs.com/package/load-script2#parentnode-optional">here</a></div>
-        <div>promise</div>
-        <div>Returns a promise which resolves to the sirv object, or rejects with err if any occurred.</div> -->
     </div>
 
 
