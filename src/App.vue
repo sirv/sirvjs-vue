@@ -1,7 +1,12 @@
 <template>
     <button v-if="homeButton" v-on:click="home" class="btn">Home</button>
     <div class="window">
-      <router-view></router-view>
+        <div class="github-ribbon">
+            <a target="_blank" href="https://github.com/sirv/sirvjs-vue">
+                <span>View on GitHub</span>
+            </a>
+        </div>
+        <router-view></router-view>
     </div>
 </template>
 <script lang="ts">
@@ -71,11 +76,38 @@ button.btn:hover {
     background: #20a0ff;
 }
 .window {
+    position: relative;
     background-color: #f6f9fc;
     border-radius: 12px;
     padding: 10px;
     box-shadow: 0px 0px 30px 1px;
     /* min-height: 500px; */
+}
+.github-ribbon {
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    overflow: hidden;
+}
+.github-ribbon > a {
+    position: relative;
+    display: inline-block;
+    transform-origin: center;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.github-ribbon span {
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    background-color: #4cbfb1;
+    line-height: 30px;
+    font-style: italic;
+    font-weight: bold;
 }
 p {
     text-align: left;

@@ -15,7 +15,7 @@
         </div></div>
     </div>
     <div class="description">
-        <p>Lazy image <a href="https://sirv.com/help/articles/responsive-imaging/">documentation</a></p>
+        <p>Lazy image <a href="https://sirv.com/help/articles/responsive-images-smv/">documentation</a></p>
     </div>
 </template>
 
