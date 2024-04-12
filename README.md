@@ -1,4 +1,4 @@
-# Vue.js Sirv Media Viewer
+# Vue components for Sirv.js
 
 [![Test](https://github.com/sirv/sirvjs-vue/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/sirv/sirvjs-vue/actions/workflows/test.yml)
 
