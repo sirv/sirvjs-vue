@@ -1,6 +1,6 @@
 {
   "name": "@sirv/sirvjs-vue",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sirv Media Viewer for Vue.js",
   "author": "sergey <sergeypo@protonmail.com>",
   "scripts": {
