@@ -1,8 +1,9 @@
 {
   "name": "@sirv/sirvjs-vue",
-  "version": "1.0.4",
-  "description": "Sirv Media Viewer for Vue.js",
-  "author": "sergey <sergeypo@protonmail.com>",
+  "version": "1.0.5",
+  "description": "Vue components for Sirv.js",
+  "author": "Sirv <support@sirv.com>",
+  "homepage": "https://sirv.com",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name index src/plugins/SirvMediaViewer/index.ts && tsc --emitDeclarationOnly",
