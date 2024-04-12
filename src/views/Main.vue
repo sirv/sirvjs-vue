@@ -5,7 +5,7 @@
     <p>Iinstall</p>
     <div class="wrapper">
         <pre class="prettyprint lang-javascript">
-npm install --save sirvjs-vue
+npm install --save @sirv/sirvjs-vue
         </pre>
     </div>
 
@@ -21,7 +21,7 @@ npm install --save sirvjs-vue
     <div style="text-align:left;">or you can add script as a module
         <div class="wrapper">
             <pre class="prettyprint lang-javascript">
-import { loadSMVScript } from 'sirvjs-vue';
+import { loadSMVScript } from '@sirv/sirvjs-vue';
 
 loadSMVScript().then((sirv) => {
 	// script is loaded
@@ -35,7 +35,7 @@ loadSMVScript().then((sirv) => {
     <div class="wrapper">
         <pre class="prettyprint lang-javascript">
 import App from './App.vue'
-import SirvjsVue from 'sirvjs-vue';
+import SirvjsVue from '@sirv/sirvjs-vue';
 
 createApp(App)
     .use(SirvjsVue)

@@ -12,12 +12,12 @@ or you can use [loadSMVScript](##-loadSMVScript-module) module
 
 ## install
 ```
-npm install --save sirvjs-vue
+npm install --save @sirv/sirvjs-vue
 ```
 ## register as plugin
 ```
 import App from './App.vue'
-import SirvjsVue from 'sirvjs-vue';
+import SirvjsVue from '@sirv/sirvjs-vue';
 
 createApp(App)
     .use(SirvjsVue)
