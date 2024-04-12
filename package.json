@@ -1,5 +1,5 @@
 {
-  "name": "sirvjs-vue",
+  "name": "@sirv/sirvjs-vue",
   "version": "1.0.0",
   "description": "Sirv Media Viewer for Vue.js",
   "author": "sergey <sergeypo@protonmail.com>",
