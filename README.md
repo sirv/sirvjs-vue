@@ -79,7 +79,7 @@ This module adds Sirv Media Viewer script to page once.
 
 ### usage
 ```
-import { loadSMVScript } from 'sirvjs-vue';
+import { loadSMVScript } from '@sirv/sirvjs-vue';
 
 loadSMVScript().then((sirv) => {
 	// script is loaded
