@@ -8,7 +8,7 @@ Copy and paste this script anywhere in your HTML, usually before `</head>`
 ```
 <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
 ```
-or you can use [loadSMVScript](##-loadSMVScript-module) module
+or you can use [loadScript](##-loadScript-module) module
 
 ## install
 ```
@@ -74,20 +74,20 @@ Object has additional props:
 
 [Lazy image documentation](https://sirv.com/help/articles/responsive-images-smv/)
 
-## loadSMVScript module
+## loadScript module
 This module adds Sirv Media Viewer script to page once.
 
 ### usage
 ```
-import { loadSMVScript } from '@sirv/sirvjs-vue';
+import { loadScript } from '@sirv/sirvjs-vue';
 
-loadSMVScript().then((sirv) => {
+loadScript().then((sirv) => {
 	// script is loaded
 });
 
 ```
 ### API
-#### `promise = loadSMVScript([attrs], [parentNode])`
+#### `promise = loadScript([attrs], [parentNode])`
 Append a `<script>` node with `'https://scripts.sirv.com/sirvjs/v3/sirv.js'` URL to the `<head>` element in the DOM.
 
 ##### `attrs` (optional)

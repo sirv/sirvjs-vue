@@ -1,4 +1,4 @@
-import { loadSMVScript } from '../../src/plugins/SirvMediaViewer/index';
+import { loadScript } from '../../src/plugins/SirvMediaViewer/index';
 
 document.createElement = (function (create: any) {
     return function (this: HTMLElement, ...args: any[]) {
@@ -14,9 +14,9 @@ document.createElement = (function (create: any) {
     };
 })(document.createElement);
 
-describe('loadSMVScript', () => {
+describe('loadScript', () => {
     it('test of sirv existing', async () => {
-        const sirv = await loadSMVScript();
+        const sirv = await loadScript();
         expect(!!sirv).toBeTruthy();
     });
 });
