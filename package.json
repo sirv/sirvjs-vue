@@ -1,6 +1,6 @@
 {
   "name": "@sirv/sirvjs-vue",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Vue components for Sirv.js",
   "author": "Sirv <support@sirv.com>",
   "homepage": "https://sirv.com",
@@ -13,7 +13,7 @@
     "prepare": "npm run build"
   },
   "main": "dist/index.umd.js",
-  "types": "dist/src/plugins/SirvMediaViewer/index.d.ts",
+  "types": "dist/index.umd.d.ts",
   "keywords": [
     "front-end",
     "web",
