@@ -48,7 +48,7 @@ Object has additional props:
   * `id` - Slide id [String]
   * `src` - Source [String]
   * `dataOptions` - Local slide options [Object]
-  * `type` - Type of slide [String]. The available props are: `spin`, `zoom`, `image`, `youtube`, `vimeo`, `video`, `html`
+  * `type` - Type of slide [String]. The available props are: `spin`, `zoom`, `image`, `youtube`, `vimeo`, `video`, `model`, `html`
   * `dataThumbnailImage` - Custom thumbnail image [String]
   * `dataThumbnailHtml` - Custom thumbnail html [String]
   * `dataDisabled` - Disable slide [Boolean]
@@ -79,7 +79,7 @@ This module adds Sirv Media Viewer script to page once.
 
 ### usage
 ```
-import { loadSMVScript } from 'sirvjs-vue';
+import { loadSMVScript } from '@sirv/sirvjs-vue';
 
 loadSMVScript().then((sirv) => {
 	// script is loaded
