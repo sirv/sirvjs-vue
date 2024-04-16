@@ -12,7 +12,7 @@
     "useDefineForClassFields": true,
     "sourceMap": true,
     "declaration": true,
-    "declarationDir": "dist",
+    "outFile": "dist/index.umd.d.ts",
     "emitDeclarationOnly": true,
     "baseUrl": ".",
     "noImplicitAny": false,
