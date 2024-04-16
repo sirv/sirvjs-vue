@@ -6,7 +6,7 @@ import SirvImage from './components/SirvImage.vue';
 const SRC = 'https://scripts.sirv.com/sirvjs/v3/sirv.js';
 
 let scriptPromise: Promise<any> | null = null;
-const loadSMVScript = (attrs?: object, parentNode?: HTMLElement) :Promise<any> => {
+const loadScript = (attrs?: object, parentNode?: HTMLElement) :Promise<any> => {
     if (!scriptPromise) {
         scriptPromise = new Promise((resolve, reject) => {
             if ((window as any).Sirv) {
@@ -41,5 +41,5 @@ if (typeof window !== 'undefined' && window.Vue) {
     window.Vue.use(SirvjsVue);
 }
 
-export { SirvjsVue, loadSMVScript }
+export { SirvjsVue, loadScript }
 export default SirvjsVue;

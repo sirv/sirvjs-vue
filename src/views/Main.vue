@@ -21,9 +21,9 @@ npm install --save @sirv/sirvjs-vue
     <div style="text-align:left;">or you can add script as a module
         <div class="wrapper">
             <pre class="prettyprint lang-javascript">
-import { loadSMVScript } from '@sirv/sirvjs-vue';
+import { loadScript } from '@sirv/sirvjs-vue';
 
-loadSMVScript().then((sirv) => {
+loadScript().then((sirv) => {
 	// script is loaded
 });
             </pre>
